@@ -4,190 +4,207 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tech Duniya Institute</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
 
-    body {
-      background: #f4f7fb;
-      color: #1e293b;
+    body{
+      background:#f4f7fb;
+      color:#1e293b;
     }
 
-    header {
-      background: linear-gradient(135deg, #0f172a, #2563eb);
-      color: white;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    header{
+      background:linear-gradient(135deg,#0f172a,#2563eb);
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
+    .logo-wrap{
+      display:flex;
+      align-items:center;
+      gap:10px;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
+    .logo-img{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      object-fit:cover;
     }
 
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 80px 8%;
-      background: linear-gradient(to right, #eff6ff, #ffffff);
-      flex-wrap: wrap;
+    .logo{
+      font-size:28px;
+      font-weight:700;
     }
 
-    .hero-text {
-      max-width: 550px;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
     }
 
-    .hero-text h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: #0f172a;
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:80px 8%;
+      background:linear-gradient(to right,#eff6ff,#ffffff);
+      flex-wrap:wrap;
     }
 
-    .hero-text p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin-bottom: 25px;
+    .hero-text{
+      max-width:550px;
     }
 
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 10px;
-      margin-right: 10px;
-      font-weight: 600;
-      transition: 0.3s;
+    .hero-text h1{
+      font-size:48px;
+      margin-bottom:20px;
+      color:#0f172a;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
+    .hero-text p{
+      font-size:18px;
+      line-height:1.8;
+      margin-bottom:25px;
     }
 
-    .hero-image img {
-      width: 450px;
-      max-width: 100%;
+    .btn{
+      display:inline-block;
+      background:#2563eb;
+      color:white;
+      padding:12px 24px;
+      text-decoration:none;
+      border-radius:10px;
+      margin-right:10px;
+      font-weight:600;
+      transition:.3s;
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 34px;
-      margin: 60px 0 20px;
-      color: #0f172a;
+    .btn:hover{
+      transform:translateY(-3px);
     }
 
-    .courses {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 30px 8% 70px;
+    .hero-image img{
+      width:450px;
+      max-width:100%;
+      border-radius:20px;
     }
 
-    .card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      transition: 0.3s;
+    .section-title{
+      text-align:center;
+      font-size:34px;
+      margin:60px 0 20px;
+      color:#0f172a;
     }
 
-    .card:hover {
-      transform: translateY(-8px);
+    .courses{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      padding:30px 8% 70px;
     }
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    .card{
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      transition:.3s;
     }
 
-    .card-content {
-      padding: 20px;
+    .card:hover{
+      transform:translateY(-8px);
     }
 
-    .card-content h3 {
-      margin-bottom: 10px;
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
     }
 
-    .price {
-      font-size: 20px;
-      font-weight: 700;
-      color: #2563eb;
-      margin: 12px 0;
+    .card-content{
+      padding:20px;
     }
 
-    .features {
-      background: #0f172a;
-      color: white;
-      padding: 70px 8%;
-      text-align: center;
+    .price{
+      font-size:20px;
+      font-weight:700;
+      color:#2563eb;
+      margin:12px 0;
     }
 
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 35px;
+    .features{
+      background:#0f172a;
+      color:white;
+      padding:70px 8%;
+      text-align:center;
     }
 
-    .feature-box {
-      background: rgba(255,255,255,0.08);
-      padding: 25px;
-      border-radius: 16px;
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      margin-top:35px;
     }
 
-    .contact {
-      padding: 70px 8%;
-      text-align: center;
-      background: white;
+    .feature-box{
+      background:rgba(255,255,255,0.08);
+      padding:25px;
+      border-radius:16px;
     }
 
-    footer {
-      background: #020617;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    .contact{
+      padding:70px 8%;
+      text-align:center;
+      background:white;
     }
 
-    @media(max-width:900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
+    footer{
+      background:#020617;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:900px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
       }
 
-      nav {
-        display: none;
+      nav{
+        display:none;
       }
 
-      .hero-text h1 {
-        font-size: 36px;
+      .hero-text h1{
+        font-size:36px;
       }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">Tech Duniya Institute</div>
+  <div class="logo-wrap">
+    <img src="logo.png.png" alt="Logo" class="logo-img">
+    <div class="logo">Tech Duniya Institute</div>
+  </div>
+
   <nav>
     <a href="#">Home</a>
     <a href="#courses">Courses</a>
@@ -200,8 +217,9 @@
   <div class="hero-text">
     <h1>Learn Future Skills Online</h1>
     <p>Tech Duniya Institute मध्ये AI, Computer, Editing आणि Digital Skills courses Marathi, Hindi आणि English मध्ये शिका.</p>
+
     <a href="#courses" class="btn">Explore Courses</a>
-    <a href="https://wa.me/919226747818" class="btn">Joining Classes</a>
+    <a href="login.html" class="btn">Joining Classes</a>
   </div>
 
   <div class="hero-image">
@@ -212,40 +230,44 @@
 <h2 class="section-title" id="courses">Popular Courses</h2>
 
 <section class="courses">
+
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="MSCIT">
+    <img src="course1.jpg" alt="MSCIT">
     <div class="card-content">
       <h3>MSCIT Course</h3>
       <p>Basic Computer Training for beginners.</p>
       <div class="price">₹999</div>
-      <a href="https://rzp.io/l/YOUR-LINK" class="btn">Buy Now</a>
+      <a href="login.html" class="btn">Buy Now</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="AI Course">
+    <img src="course2.jpg" alt="AI Course">
     <div class="card-content">
       <h3>AI Tools Course</h3>
       <p>Latest AI tools for students and creators.</p>
       <div class="price">₹499</div>
-      <a href="https://rzp.io/l/YOUR-LINK" class="btn">Buy Now</a>
+      <a href="login.html" class="btn">Buy Now</a>
     </div>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Editing Course">
+    <img src="course3.jpg" alt="Editing Course">
     <div class="card-content">
       <h3>Video Editing</h3>
       <p>Learn editing using mobile and computer.</p>
       <div class="price">₹799</div>
-      <a href="https://rzp.io/l/YOUR-LINK" class="btn">Buy Now</a>
+      <a href="login.html" class="btn">Buy Now</a>
     </div>
   </div>
+
 </section>
 
 <section class="features">
   <h2>Why Choose Tech Duniya Institute?</h2>
+
   <div class="feature-grid">
+
     <div class="feature-box">
       <h3>Expert Teaching</h3>
       <p>Easy learning in Marathi, Hindi & English.</p>
@@ -258,24 +280,20 @@
 
     <div class="feature-box">
       <h3>Student Support</h3>
-      <p>WhatsApp and Telegram support available.</p>
+      <p>WhatsApp support available.</p>
     </div>
+
   </div>
 </section>
 
 <section class="contact" id="contact">
   <h2>Contact Us</h2>
   <p>Email: techduniya@gmail.com</p>
-  <p>WhatsApp: +91 XXXXX XXXXX</p>
+  <p>WhatsApp: 9226747818</p>
 </section>
 
 <footer>
   <p>© 2026 Tech Duniya Institute | All Rights Reserved</p>
-  <p style="margin-top:10px;">
-    <a href="https://wa.me/919226747818" target="_blank" style="color:white; text-decoration:none; font-size:18px;">
-      📱 WhatsApp: 9226747818
-    </a>
-  </p>
 </footer>
 
 </body>
